@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>UNBOUND X</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root{
+  --bg:#000;
+  --fg:#fff;
+  --muted:#9a9a9a;
+  --line:#222;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--fg);
+}
+a{color:var(--fg); text-decoration:none}
+img{max-width:100%; display:block}
+
+/* HEADER */
+header{
+  position:fixed; top:0; left:0; right:0;
+  z-index:10;
+  padding:18px 28px;
+  display:flex; justify-content:space-between; align-items:center;
+  background:rgba(0,0,0,.6);
+  backdrop-filter: blur(6px);
+}
+.logo{font-weight:bold; letter-spacing:2px}
+nav a{margin-left:18px; font-size:13px; opacity:.8}
+nav a:hover{opacity:1}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex; align-items:center; justify-content:center;
+  position:relative;
+}
+.hero img{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover; opacity:.75;
+}
+.hero .text{
+  position:relative; text-align:center;
+}
+.hero h1{
+  margin:0;
+  font-size:56px;
+  letter-spacing:6px;
+}
+.hero p{
+  margin-top:12px;
+  font-size:14px;
+  opacity:.9;
+}
+
+/* SECTION */
+section{padding:80px 28px}
+.section-title{
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:28px;
+  opacity:.9;
+}
+
+/* CATEGORY STRIP */
+.categories{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.cat{
+  border:1px solid var(--line);
+  padding:48px 20px;
+  text-align:center;
+  font-size:14px;
+  letter-spacing:1px;
+}
+.cat:hover{background:#111}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:18px;
+}
+.item{
+  border:1px solid var(--line);
+}
+.item .info{
+  padding:12px;
+  font-size:13px;
+}
+.price{opacity:.7; font-size:12px}
+
+/* FOOTER */
+footer{
+  border-top:1px solid var(--line);
+  padding:40px 28px;
+  font-size:12px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">UNBOUND X</div>
+  <nav>
+    <a href="products.html">COLLECTIONS</a>
+    <a href="series-july-2025.html">NEW</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="https://via.placeholder.com/1600x1000?text=HERO+IMAGE" alt="">
+  <div class="text">
+    <h1>UNBOUND X</h1>
+    <p>无界 · 自由表达<br>Unbound by rules.</p>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section>
+  <div class="section-title">CATEGORIES</div>
+  <div class="categories">
+    <a class="cat" href="series-signature-logo.html">SIGNATURE LOGO</a>
+    <a class="cat" href="series-signature.html">SIGNATURE</a>
+    <a class="cat" href="series-whateverfuck.html">WHATEVERF**K</a>
+    <a class="cat" href="series-we-are-everywhere.html">WE ARE EVERYWHERE</a>
+    <a class="cat" href="series-july-2025.html">JULY 2025</a>
+    <a class="cat" href="series-dec-2025.html">DEC 2025</a>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section>
+  <div class="section-title">FEATURED</div>
+  <div class="grid">
+    <a class="item" href="series-signature-logo.html">
+      <img src="https://via.placeholder.com/600x750?text=TEE+01" alt="">
+      <div class="info">
+        LOGO TEE 01<br>
+        <span class="price">BUY 1 RM88 · BUY 2 RM138</span>
+      </div>
+    </a>
+
+    <a class="item" href="series-signature-logo.html">
+      <img src="https://via.placeholder.com/600x750?text=TEE+02" alt="">
+      <div class="info">
+        LOGO TEE 02<br>
+        <span class="price">BUY 1 RM88 · BUY 2 RM138</span>
+      </div>
+    </a>
+
+    <a class="item" href="series-july-2025.html">
+      <img src="https://via.placeholder.com/600x750?text=NEW+TEE" alt="">
+      <div class="info">
+        JULY 2025 TEE<br>
+        <span class="price">BUY 1 RM88 · BUY 2 RM138</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+© UNBOUND X — Oversize Tee / Buy 1 RM88 · Buy 2 RM138
+</footer>
+
+</body>
+</html>
