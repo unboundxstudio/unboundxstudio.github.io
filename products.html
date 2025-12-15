@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Collections | UNBOUND X</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root{
+  --bg:#000;
+  --fg:#fff;
+  --muted:#9a9a9a;
+  --line:#222;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--fg);
+}
+a{color:var(--fg); text-decoration:none}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#000;
+  border-bottom:1px solid var(--line);
+  padding:18px 28px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-weight:bold;
+  letter-spacing:2px;
+  font-size:14px;
+}
+nav a{
+  margin-left:18px;
+  font-size:12px;
+  opacity:.7;
+}
+nav a:hover{opacity:1}
+
+/* PAGE */
+.page{
+  padding:80px 28px;
+}
+.page h1{
+  margin:0
