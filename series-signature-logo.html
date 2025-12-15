@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Signature Logo Series | UNBOUND X</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#000;
+  --fg:#fff;
+  --muted:#9a9a9a;
+  --line:#222;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--fg);
+}
+a{color:var(--fg); text-decoration:none}
+img{width:100%; display:block}
+
+/* HEADER */
+header{
+  position:sticky; top:0;
+  background:#000;
+  border-bottom:1px solid var(--line);
+  padding:18px 28px;
+  display:flex; justify-content:space-between; align-items:center;
+}
+.logo{font-weight:bold; letter-spacing:2px; font-size:14px}
+nav a{margin-left:18px; font-size:12px; opacity:.7}
+nav a:hover{opacity:1}
+
+/* PAGE TITLE */
+.title{
+  padding:60px 28px 30px;
+}
+.title h1{
+  margin:0;
+  font-size:22px;
+  letter-spacing:2px;
+}
+.title p{
+  margin-top:12px;
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+/* GRID */
+.grid{
+  padding:0 28px 80px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
+.item{
+  border:1px solid var(--line);
+}
+.item img{
+  aspect-ratio:3/4;
+  object-fit:cover;
+}
+.info{
+  padding:12px;
+  font-size:12px;
+  line-height:1.5;
+}
+.price{
+  color:var(--muted);
+  font-size:11px;
+}
+
+/* ORDER */
+.order{
+  margin-top:8px;
+  font-size:11px;
+  letter-spacing:1px;
+  opacity:.8;
+}
+.order:hover{opacity:1}
+
+/* FOOTER */
+footer{
+  border-top:1px solid var(--line);
+  padding:40px 28px;
+  font-size:11px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">UNBOUND X</div>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="products.html">COLLECTIONS</a>
+  </nav>
+</header>
+
+<!-- TITLE -->
+<section class="title">
+  <h1>SIGNATURE LOGO SERIES</h1>
+  <p>
+    Oversize Tee · 重磅棉<br>
+    BUY 1 RM88 · BUY 2 RM138
+  </p>
+</section>
+
+<!-- PRODUCTS GRID -->
+<section class="grid">
+
+  <div class="item">
+    <img src="https://via.placeholder.com/600x800?text=LOGO+TEE+01" alt="">
+    <div class="info">
+      LOGO TEE 01<br>
+      <span class="price">BUY 1 RM88 · BUY 2 RM138</span><br>
+      <a class="order" href="https://wa.me/60102518078?text=Order%20LOGO%20TEE%2001">ORDER VIA WHATSAPP</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="https://via.placeholder.com/600x800?text=LOGO+TEE+02" alt="">
+    <div class="info">
+      LOGO TEE 02<br>
+      <span class="price">BUY 1 RM88 · BUY 2 RM138</span><br>
+      <a class="order" href="https://wa.me/60102518078?text=Order%20LOGO%20TEE%2002">ORDER VIA WHATSAPP</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <img src="https://via.placeholder.com/600x800?text=LOGO+TEE+03" alt="">
+    <div class="info">
+      LOGO TEE 03<br>
+      <span class="price">BUY 1 RM88 · BUY 2 RM138</span><br>
+      <a class="order" href="https://wa.me/60102518078?text=Order%20LOGO%20TEE%2003">ORDER VIA WHATSAPP</a>
+    </div>
+  </div>
+
+  <!-- 继续复制到 6–7 个 -->
+
+</section>
+
+<footer>
+Oversize Tee · Heavy Cotton · UNBOUND X
+</footer>
+
+</body>
+</html>
