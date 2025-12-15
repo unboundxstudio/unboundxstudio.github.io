@@ -24,6 +24,21 @@ body{
 a{color:var(--fg); text-decoration:none}
 img{max-width:100%; display:block}
 
+/* LOGO */
+.logo img{
+  height:28px;      /* 推荐尺寸 */
+  width:auto;
+  display:block;
+}
+
+/* 手机更小一点 */
+@media (max-width:768px){
+  .logo img{
+    height:24px;
+  }
+}
+
+
 /* HEADER */
 header{
   position:fixed; top:0; left:0; right:0;
